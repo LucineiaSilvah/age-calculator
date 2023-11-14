@@ -108,9 +108,11 @@
       @media screen and (min-width:0){
         
         .container{
+          margin:20px auto;
           max-width: 500px;
           width:90%;
           height: 450px;
+          
           min-width: 340px;
         }
         form{
@@ -121,7 +123,7 @@
           width: 70px 
         }
         .line{
-          width: 70%;
+          width: 80%;
           top: 150px;
          }
         button{
@@ -140,6 +142,9 @@
         }
         input {
           width: 100px;
+        }
+        form{
+          padding-right: 150px;
         }
         .line{
          width: 400px;
