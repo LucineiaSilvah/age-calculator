@@ -1,0 +1,147 @@
+:root{
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+}
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color:var(--Purple);
+      }
+      body{
+        background-color: rgba(233, 235, 235, 0.933);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 20px auto;
+        max-height: 450px;
+        border-radius: 10px 10px 90px 10px;
+        box-shadow: -2px 4px 4px var(--Purple);
+        background: #ffffff;
+      }
+      form {
+        
+        width: 80%;
+        padding: 12px;
+        padding-right: 150px;
+        display: flex;
+        justify-content: space-between;
+        
+        margin: 0 auto;
+       
+        position: relative;
+      }
+      .dados{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+      }
+      .erro{
+        color: var(--Light-red);
+        font-size: 10px;
+      }
+     
+      label {
+        text-transform: uppercase;
+        color: #a6a6a6;
+        font-weight: bold;
+        display: flex;
+        font-size: 12px;
+      }
+      input {
+        width: 100px;
+        outline: none;
+        font-size: 32px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        font-weight: bold;
+        text-align: center;
+        
+      }
+      input:focus{
+        border: 1px solid var(--Purple);
+      }
+      button{
+        cursor: pointer;
+        position: absolute;
+       box-shadow: 2px 2px 10px #a6a6a6;
+        top: 105px;
+        background:#000 url(/assets/images/icon-arrow.svg) no-repeat center / cover;
+        margin: 20px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        align-self: self-end;
+      }
+    
+      #resultado{
+        width: 100%;
+        padding: 0;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 2.5rem;
+        align-self: self-start;
+        margin-left: 30px;
+      }
+      #resultado p{
+        line-height: 24px;
+     
+      }
+      span{
+        color: var(--Purple);
+      }
+      .line{
+        border-bottom: 1px solid rgb(215, 213, 213);
+        width: 450px;
+        position: absolute;
+        top: 150px;
+        margin-left: 20px;
+      }
+      @media screen and (min-width:0){
+       
+        .container{
+          width:350px;
+          height: 450px;
+          min-width: 340px;
+        }
+        input {
+          width: 70px; 
+        }
+        .line{
+          width: 70%;
+          top: 150px;
+         }
+        button{
+          margin: 0;
+          left: 50%;
+          transform: translate(-50%, 50%);
+          top: 100px;}
+      }
+      @media screen and (min-width:768px){
+
+        .container{
+          padding: 10px;
+          width: 450px;
+          height: 360px;
+          margin-top: 30px;   
+        }
+        input {
+          width: 100px;
+        }
+        .line{
+         width: 450px;
+         top: 150px;
+         margin-left: 20px;
+        }
+        button{
+          left: initial;
+        }
+      }
