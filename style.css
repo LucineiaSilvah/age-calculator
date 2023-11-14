@@ -106,14 +106,19 @@
         margin-left: 20px;
       }
       @media screen and (min-width:0){
-       
+        
         .container{
-          width:350px;
+          max-width: 500px;
+          width:90%;
           height: 450px;
           min-width: 340px;
         }
+        form{
+          padding-right: 0;
+          padding: 10px;
+        }
         input {
-          width: 70px; 
+          width: 70px 
         }
         .line{
           width: 70%;
@@ -137,7 +142,7 @@
           width: 100px;
         }
         .line{
-         width: 450px;
+         width: 400px;
          top: 150px;
          margin-left: 20px;
         }
