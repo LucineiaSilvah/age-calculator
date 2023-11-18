@@ -61,5 +61,9 @@ btn.addEventListener("click", () => {
   year.value = "";
   month.value = "";
   day.value = "";
-  res.innerHTML = "";
+  res.innerHTML = `
+  <p class="a"><span>--</span>  years</p>
+  <p class="m"><span>--</span> months</p>
+  <p class="d"><span>--</span> days</p>
+  `;
   });
